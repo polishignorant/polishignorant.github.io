@@ -45,3 +45,5 @@ const fs = require("fs");
 	});
   }, 10000);
 })();
+
+//heroku buildpacks:add heroku/google-chrome master
