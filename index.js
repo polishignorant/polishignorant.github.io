@@ -25,7 +25,7 @@ const fs = require('fs');
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('http://localhost:'+port);
+  await page.goto('https://polishignorant.github.io/');
   setInterval(async ()=>{
 	  const content = await page.$eval('#text', e => e.innerHTML);
 	  fs.writeFile(__dirname+"/results.html", content, (err) => {
